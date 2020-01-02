@@ -6,23 +6,41 @@ Generally while posting in facebook, we need some good quote to put in caption.
 By using this web-app you can get a random quote for the requested tag.
 The longer length quotes are filtered out as they can't be used for post.
 
-## RUN
+
+### API
+
+`http://quoteboy.herokuapp.com/quote?tag='<YOUR_TAG>'`
+
+## RUN IN LOCAL MACHINE
 
 Install requirements
 
 `pip install -r requirements.txt`
     
- run main
+ run quoter.py
  
-`python main.py`
+`python quoter.py`
  
  To save a json file for multiple tags
  
 `python save_in_file.py`
 
-### API
+on running this file, you will get a json file having quotes of the tag you mentioned in the format:
+```
+{<tag>:
+     {  
+        "quote_id":<quoteID>,
+        "content":<quoteText>,
+        "author":<authorName>
+    }
+ }
+ ```
 
-`http://quoteboy.herokuapp.com/quote?tag='<YOUR_TAG>'`
+## RUN APP IN LOCAL MACHINE
+
+run app.py 
+
+`python app.py`
 
 Task list:
 
