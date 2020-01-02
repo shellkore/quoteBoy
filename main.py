@@ -47,9 +47,8 @@ def main():
 
 
 if __name__=='__main__':
-	start_time = time.time()
+	#start_time = time.time()
 	main()
-	#quote = quotePicker(tagList[0])
 	# print(quote)
-	elapsed_time = time.time() - start_time
-	print("elapsed_time =",elapsed_time)
+	# elapsed_time = time.time() - start_time
+	# print("elapsed_time =",elapsed_time)
