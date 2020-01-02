@@ -20,12 +20,16 @@ Install requirements
  
 `python save_in_file.py`
 
+### API
+
+`http://quoteboy.herokuapp.com/quote?tag='<YOUR_TAG>'`
+
 Task list:
 
-- [ ] create a flask app.
+- [X] create a flask app.
 - [ ] increase the number of sites to scrape from.
-- [ ] create API.
-- [ ] deploy the web-app.
+- [X] create API.
+- [X] deploy the web-app.
 - [ ] create firefox or chrome extension.
 
 Anyone who wants to work on this project can create an issue to the corresponding task from Task list.
