@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quoteboy",
+  "description": "This extension will bring us the quote for the requested tag",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+
+  "content_scripts": [ 
+        { 
+            "js": [ "jquery-3.4.1.min.js"],
+             "matches": [ "http://*/*", "https://*/*"]
+         }
+     ],
+  
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtT/ncxPxBVFTj08Z6d1kBaqlfJlxA7cAhMuDTK6F8C2y19CYUJqVQDnhEvbTkD+RiHE02fx/KEfwwmArkMW/6t7K/CNcp/QksUYi7GU3fr9Pq2wTJDVLGKaUQGZK/HDQBGcYZ03mTcXOWaOn9dZ9MJ9Wyz8Nc9Z391XRO+8stkKRsl/qy7lQJW/VIZZIx6BpMzGU4Zq52Zqlr7tnfkbMtGkSUdxtwTMn83B7pnNDRljeG0m3PMJjo9+HHTdYIF0up87aKPKkSnCzXHlFveoeEGN8fMH2q/37AU/SaNc6ucT3zkrwibq5ZbdU+DO9QJSa5PFrBCDfTPDflrDnx2MrwwIDAQAB"
+}
