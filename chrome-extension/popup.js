@@ -11,6 +11,7 @@ $(document).ready(function () {
 }
 
 	$('.fetch').click(function(){
+		$('#result').text("Loading.....")
 		var tagRequested = $("#tagInput").val();
 		console.log(tagRequested)
 		var url = 'https://quoteboy.herokuapp.com/quote'

@@ -1,6 +1,7 @@
+/* input field styling */
 
 .wrap {
-    width: 200px;
+    width: 400px;
     margin: auto;
 }
 
@@ -13,7 +14,7 @@
 
 .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid #101111;
     border-right: none;
     padding: 5px;
     height: 30px;
@@ -23,14 +24,14 @@
 }
 
 .searchTerm:focus {
-    color: #00B4CC;
+    color: #101111;
 }
 
 #searchButton {
     width: 40px;
     height: 46px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid #101111;
+    background: #101111;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -40,11 +41,50 @@
 
 
 .search-icon {
-
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    filter:invert(100%);
+}
 
 
+/* qoute styling */
+
+blockquote {
+	font-size: 1.25em;
+	width: 80%;
+	margin: 14px auto;
+	font-family: Open Sans;
+	font-style: italic;
+	color: #101111 ;
+	padding: 1.2em 30px 1.2em 35px;
+	border-left: 6px solid #0a0909c9;
+	line-height: 1.6;
+	position: relative;
+	background: ghostwhite;
+	border-radius: 4px;
+}
+
+blockquote::before {
+	content: "\275D";
+	color: #110d0d;
+	font-size: 2.5em;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+}
+
+blockquote ::after {
+	content: "";
+}
+
+blockquote footer {
+	font-style: normal;
+	font-size: small;
+}
+
+
+blockquote footer::before {
+	content: "\2014\2002"; /*Unicode for em dash and space*/;
 }
