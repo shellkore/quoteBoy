@@ -4,12 +4,26 @@
     <title>Quote-Boy</title>
     <script src="jquery-3.4.1.min.js"></script>
     <script src="popup.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <input type="text" id="tagInput" placeholder="Enter The Tag">
+    <div class="wrap">
+      <div class="search">
+         <input type="text"  id="tagInput" class="searchTerm" placeholder="What are you looking for?">
+         <button type="submit" class="fetch" id="searchButton">
+        <img class="search-icon" alt="search" src="https://img.icons8.com/search"></i>
+        </button>
+      </div>
+   </div>
+
+
+
+   
+
+    
       <p id = "result"></p>
       <div>
-      <button id="fetch"> FETCH!! </button>
+      <button class="fetch" id="another"> ANOTHER </button>
       <button id="copy">COPY!</button>
   	  </div>
   </form>

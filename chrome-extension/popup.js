@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	$('#copy').hide()
+	$('#another').hide()
 	function copyToClipboard(element) {
 		console.log('func reached')
  var $temp = $("<input>");
@@ -9,14 +10,14 @@ $(document).ready(function () {
  $temp.remove();
 }
 
-	$('#fetch').click(function(){
+	$('.fetch').click(function(){
 		var tagRequested = $("#tagInput").val();
 		console.log(tagRequested)
 		var url = 'https://quoteboy.herokuapp.com/quote'
 		$.get(url,{tag:tagRequested}, function(data){
 		console.log(data['quote'])
 		$('#result').text(data['quote'])
-		$('#fetch').html('ANOTHER!')
+		$('#another').show()
 		$('#copy').show()
 		});
 
