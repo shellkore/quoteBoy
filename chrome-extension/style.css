@@ -39,7 +39,6 @@
     font-size: 20px;
 }
 
-
 .search-icon {
     display: block;
     margin-left: auto;
@@ -47,7 +46,6 @@
     width: 100%;
     filter:invert(100%);
 }
-
 
 /* qoute styling */
 
@@ -88,3 +86,14 @@ blockquote footer {
 blockquote footer::before {
 	content: "\2014\2002"; /*Unicode for em dash and space*/;
 }
+
+.multi-button button {
+    float:right;
+    background: white;
+    border: 0.125em solid black;
+    cursor: pointer;letter-spacing: 0.125em;
+    margin: 0.5rem;
+    padding: 0.5em 0.75em;
+    position: relative;
+    text-transform: uppercase;
+  }
