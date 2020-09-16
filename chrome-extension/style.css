@@ -9,7 +9,7 @@
     width: 100%;
     position: relative;
     display: flex;
-  
+
 }
 
 .searchTerm {
@@ -37,6 +37,7 @@
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
+    outline: none;
 }
 
 .search-icon {
@@ -44,56 +45,103 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    filter:invert(100%);
 }
 
 /* qoute styling */
 
 blockquote {
-	font-size: 1.25em;
-	width: 80%;
-	margin: 14px auto;
-	font-family: Open Sans;
-	font-style: italic;
-	color: #101111 ;
-	padding: 1.2em 30px 1.2em 35px;
-	border-left: 6px solid #0a0909c9;
-	line-height: 1.6;
-	position: relative;
-	background: ghostwhite;
-	border-radius: 4px;
+    font-size: 1.25em;
+    width: 80%;
+    margin: 14px auto;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #101111;
+    padding: 1.2em 30px 1.2em 35px;
+    border-left: 6px solid #0a0909c9;
+    line-height: 1.6;
+    position: relative;
+    background: ghostwhite;
+    border-radius: 4px;
 }
 
 blockquote::before {
-	content: "\275D";
-	color: #110d0d;
-	font-size: 2.5em;
-	position: absolute;
-	left: 5px;
-	top: 5px;
+    content: "\275D";
+    color: #110d0d;
+    font-size: 2.5em;
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 
 blockquote ::after {
-	content: "";
+    content: "";
 }
 
 blockquote footer {
-	font-style: normal;
-	font-size: small;
+    font-style: normal;
+    font-size: small;
 }
 
 
 blockquote footer::before {
-	content: "\2014\2002"; /*Unicode for em dash and space*/;
+    content: "\2014\2002";
+    /*Unicode for em dash and space*/
+    ;
 }
 
+
+/*Action buttons styling */
+
 .multi-button button {
-    float:right;
     background: white;
     border: 0.125em solid black;
-    cursor: pointer;letter-spacing: 0.125em;
+    cursor: pointer;
+    letter-spacing: 0.125em;
     margin: 0.5rem;
     padding: 0.5em 0.75em;
     position: relative;
     text-transform: uppercase;
-  }
+    margin-top: -4px;
+    height: 45px;
+}
+
+
+.share-button a:link,
+.share-button a:visited {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 40px;
+}
+
+.share-button img {
+    height: 30px;
+    width: 30px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+fieldset {
+
+    border: 0.125em solid black;
+    background: white;
+    height: 48px;
+    margin-top: -10px;
+    padding: 1px 7px 0 7px;
+}
+
+fieldset legend {
+
+    color: black;
+    font-size: 12px;
+    margin-left: 5px;
+    letter-spacing: 0.100em;
+    text-transform: uppercase;
+}
