@@ -1,17 +1,46 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Quote-Boy</title>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-      <input type="text" id="tagInput" placeholder="Enter The Tag">
-      <p id = "result"></p>
-      <div>
-      <button id="fetch"> FETCH!! </button>
-      <button id="copy">COPY!</button>
-  	  </div>
-  </form>
-  </body>
-</html
+
+<head>
+  <title>Quote-Boy</title>
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="search">
+      <input type="text" id="tagInput" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="fetch" id="searchButton">
+        <img class="search-icon" alt="search" src="image/search.png"></i>
+      </button>
+    </div>
+  </div>
+  <blockquote>
+    <p id="result">"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma, which
+      is living with the results of other people's thinking"
+    </p>
+    <!-- <footer>Qoute Author name
+        </footer> -->
+  </blockquote>
+  <div>
+    <div class="action-button">
+      <div class="share-button left">
+        <fieldset>
+          <legend>share via</legend>
+          <a href="#" target="_blank" id="twitter"><img alt="search" src="image/twitter.png"></a>
+          <a href="#" target="_blank" id="facebook"><img alt="search" src="image/facebook.png"></a>
+          <a href="#" target="_blank" id="reddit"><img alt="search" src="image/reddit.png"></a>
+          <a href="#" target="_blank" id="linkedin"><img alt="search" src="image/linkedin.png"></a>
+        </fieldset>
+      </div>
+      <div class="multi-button right">
+        <button class="copy" id="copy">Copy</button>
+        <button class="fetch" id="another">Next</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
